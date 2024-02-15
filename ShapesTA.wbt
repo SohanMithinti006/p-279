@@ -1,0 +1,110 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2904160002931677 0.2444955063008091 0.9251380946498905 1.561191055912804
+  position 3.67512604374972 -13.377051072021388 8.093585370024883
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF BOX Pose {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+  ]
+}
+DEF capcule Pose {
+  translation 2 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0 0.6
+        roughness 0.2
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.3
+        radius 0.25
+        subdivision 24
+      }
+    }
+  ]
+}
+DEF cylinder Pose {
+  translation 3 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.78 0.56 0.99
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.6
+        radius 0.4
+        subdivision 24
+      }
+    }
+  ]
+}
+DEF cone Pose {
+  translation 5 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.1 0.2 0.3
+        roughness 1
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.5
+        height 0.6
+        subdivision 24
+      }
+    }
+  ]
+}
+DEF sphere Pose {
+  translation 7 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.789 0.123 0.345
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.5
+        subdivision 3
+      }
+    }
+  ]
+}
+DEF flat Transform {
+  translation 9 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.99 0.769 0.654
+        roughness 1
+        metalness 0
+      }
+      geometry Plane {
+      }
+    }
+  ]
+}
